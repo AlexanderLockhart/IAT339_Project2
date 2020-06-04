@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Supple Cravings Styleguide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Supple Cravings Styleguide" />
+    <meta name="author" content="Alexander Lockhart">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <h1>Supple Cravings Styleguide</h1>
+
+    <nav class="nav-main">
+      <a href="index.html" class="nav-main-item">Styleguide</a>
+      <a href="wireframes.html" class="nav-main-item">Wireframes</a>
+      <a href="citations.html" class="nav-main-item">Citations</a>
+    </nav>
+
+    <section>
+      <h2>In-text link</h2>
+      <h3>Example</h3>
+      <a href="#">an in-text link</a>
+      <h3>Code:</h3>
+      <code>&lt;a href="#"&gt;an in-text link&lt;/a&gt;</code>
+    </section>
+
+    <section>
+      <h2>Call to Action Button</h2>
+      <h3>Example</h3>
+      <button class="button">Add to Cart</button>
+      <h3>Code</h3>
+      <code>&lt;button class="button"&gt;Add to Cart&lt;/button&gt;</code>
+    </section>
+
+    <section>
+      <h2>Submit + Reset Button</h2>
+      <h3>Example</h3>
+      <input type="submit" name="submit" value="Submit">
+      <input type="reset" name="reset" value="Reset">
+      <h3>Code</h3>
+      <code>
+        &lt;input type="submit" name="submit" value="Submit"&gt;
+      </code>
+      <code>
+        &lt;input type="reset" name="reset" value="Reset"&gt;
+      </code>
+
+    </section>
+
+    <section>
+      <h2>Colour Swatches</h2>
+      <h3>Example</h3>
+      <div class="square-blue"></div>
+      <div class="square-black"></div>
+      <div class="square-grey"></div>
+      <h3>Code</h3>
+      <code> background-color: rgb(61, 125, 209); </code>
+      <code> background-color: rgb(59, 58, 48); </code>
+      <code> background-color: rgb(230, 230, 230); </code>
+
+    </section>
+
+    <section>
+      <h2>Headings</h2>
+      <h3>Example</h3>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h3>Code</h3>
+      <code>&lt;h1&gt; Heading 1 &lt;/h1&gt;</code>
+      <code>&lt;h2&gt; Heading 2 &lt;/h2&gt;</code>
+      <code>&lt;h3&gt; Heading 3 &lt;/h3&gt;</code>
+    </section>
+
+    <section>
+      <h2>Paragraph</h2>
+      <h3>Example</h3>
+      <p>This is an example of a paragraph for Supple Cravings.</p>
+      <h3>Code</h3>
+      <code>&lt;p&gt; This is an example of a paragraph for Supple Cravings. &lt;/p&gt;</code>
+    </section>
+
+    <section>
+      <h2>Bulleted Lists</h2>
+      <h3>Example</h3>
+      <ul>
+        <li>
+          Point 1
+        </li>
+        <li>
+          Point 2
+        </li>
+        <li>
+          Point 3
+        </li>
+      </ul>
+      <h3>Code</h3>
+      <code>&lt;ul&gt;
+        &lt;li&gt;
+        Point 1
+        &lt;/li&gt;
+        &lt;li&gt;
+        Point 2
+        &lt;/li&gt;
+        &lt;li&gt;
+        Point 3
+        &lt;/li&gt;
+        &lt;/ul&gt;</code>
+    </section>
+
+    <section>
+      <h2>Numbered Lists</h2>
+      <h3>Example</h3>
+      <ol>
+        <li>
+          Point 1
+        </li>
+        <li>
+          Point 2
+        </li>
+        <li>
+          Point 3
+        </li>
+      </ol>
+      <h3>Code</h3>
+      <code>&lt;ol&gt;
+        &lt;li&gt;
+        Point 1
+        &lt;/li&gt;
+        &lt;li&gt;
+        Point 2
+        &lt;/li&gt;
+        &lt;li&gt;
+        Point 3
+        &lt;/li&gt;
+        &lt;/ol&gt;</code>
+    </section>
+
+    <section>
+      <h2>Navigation Module</h2>
+      <h3>Example</h3>
+      <nav class="nav-main">
+        <a href="wireframes.html" class="nav-main-item">Wireframes</a>
+        <a href="citations.html" class="nav-main-item">Citations</a>
+        <input type="text" placeholder="Search" name="search">
+
+      </nav>
+      <h3>Code</h3>
+      <code>
+        .nav-main-item{
+        display: inline-block;
+        color: rgb(61, 125, 209);
+        font-weight: bold;
+      }
+      </code>
+
+      <code>
+        .nav-main-item:hover, .nav-main-item:active, .nav-main-item:focus {
+        color:rgb(59, 58, 48);
+      }
+    </code>
+      <code>
+        &lt;input type="text" placeholder="Search" name="search"&gt;
+    </code>
+
+
+    </section>
+
+    <section>
+      <h2>Product Listing</h2>
+      <div class="box">
+        <div class="box-item-image">
+          <figure>
+            <img src="img/product_mockup.jpg" alt="Vitamin B12 with Methylcobalamin">
+          </figure>
+        </div>
+        <div class="box-item-text">
+          <h3>Example</h3>
+          <h3> Vitamin B12 with Methylcobalamin </h3>
+          <p>100 MCG | $8.99 </p>
+          <p>Product Number: 1234</p>
+          <p>Vitamin B12 is a nutrient that helps keep the body’s nerve and blood cells healthy and helps make DNA, the genetic material in all cells. Vitamin B12 also helps prevent a type of anemia called megaloblastic anemia that makes people tired and weak.</p>
+        </div>
+      </div>
+
+      <h3>Code</h3>
+      <code>
+        &lt;div class="box"&gt; <br>
+          &lt;div class="box-item-image"&gt; <br>
+            &lt;figure&gt; <br>
+              &lt;img src="img/mockup.jpg"&gt; <br>
+            &lt;/figure&gt; <br>
+          &lt;/div&gt; <br>
+          &lt;div class="box-item-text"&gt; <br>
+          ... <br>
+          &lt;/div&gt; <br>
+        &lt;/div&gt;
+      </code>
+    </section>
+
+    <section>
+      <h2>Website Grid Structure</h2>
+      <h3>Example</h3>
+      <div class="box">
+        <div class="grid-blue"></div>
+        <div class="grid-black"></div>
+        <div class="grid-grey"></div>
+        <div class="grid-blue"></div>
+        <div class="grid-black"></div>
+      </div>
+
+      <h3>Code</h3>
+      <code>
+        .box {
+        	display: -webkit-flex;
+        	display: -ms-flex;
+        	display: flex;
+        }
+      </code>
+    </section>
+
+    <section>
+      <h2>Product Review Form</h2>
+      <h3>Example</h3>
+      <textarea class="comment" placeholder="Write a review..."> </textarea>
+      <br>
+      <input type="submit" name="submit" value="Write Review">
+
+      <h3>Code</h3>
+      <code>
+        &lt;textarea class="comment" placeholder="Write a review..."&gt; &lt;/textarea&gt;
+      &lt;input type="submit" name="submit" value="Write Review"&gt;
+    </code>
+    </section>
+
+  </body>
+</html>

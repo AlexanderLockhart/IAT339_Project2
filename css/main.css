@@ -1,0 +1,217 @@
+/*
+This file created by Alexander Lockhart
+Based on work produced by Paul Broknshire and Andrew Hawrishkewich
+
+*/
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 3rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.75rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p, ol, ul {
+  max-width: 40rem;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: 1px solid black;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+	font-style: italic;
+}
+
+a {
+  color:rgb(61, 125, 209);
+  transition: color 0.5s;
+}
+
+a:hover, a:active, a:focus {
+  color:rgb(50, 0, 0);
+  text-decoration: none;
+}
+
+code, samp {
+  display: inline-block;
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+  margin: 0.25rem;
+}
+
+.nav-main-item{
+  display: inline-block;
+  color: rgb(61, 125, 209);
+  border: 0px solid black;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+  font-weight: bold;
+}
+
+.nav-main-item:hover, .nav-main-item:active, .nav-main-item:focus {
+  color:#3b3a30;
+}
+
+section {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #3b3a30;
+}
+
+button {
+  display: inline-block;
+  color: white;
+  border: 0px solid black;
+  border-radius: 25px;
+  background-color: rgb(61, 125, 209);
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+button:hover, button:active, button:focus {
+  color:white;
+  background-color: #3b3a30;
+}
+
+.square-blue {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(61, 125, 209);
+}
+
+.square-black {
+  height: 50px;
+  width: 50px;
+  background-color: #3b3a30;
+}
+
+.square-grey {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  background-color: rgb(230, 230, 230);
+}
+
+.grid-blue {
+  height: 50px;
+  background-color: white;
+  background-color: rgb(61, 125, 209);
+}
+
+.grid-black {
+  height: 50px;
+  background-color: white;
+  background-color: #3b3a30;
+}
+
+.grid-grey {
+  height: 50px;
+  background-color: white;
+  background-color: rgb(230, 230, 230);
+}
+
+textarea{
+  width: 50%;
+  height:10rem;
+  resize: none;
+}
+
+input[type=submit] {
+  display: inline-block;
+  color: white;
+  border: 0px solid black;
+  border-radius: 25px;
+  background-color: rgb(61, 125, 209);
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus {
+  color:white;
+  background-color: #3b3a30;
+}
+
+input[type=reset] {
+  display: inline-block;
+  color: rgb(61, 125, 209);
+  border: 2px solid rgb(61, 125, 209);
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
+input[type=reset]:hover, input[type=reset]:active, input[type=reset]:focus {
+  color: white;
+  background-color:#3b3a30;
+  border: 2px solid transparent;
+}
+
+input[type="text"] {
+  border-radius: 25px;
+  padding: 0.4rem 0.8rem;
+}
+
+.wireframe {
+  border: 0px solid transparent;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 2rem;
+}
+
+figcaption {
+  padding-top: 2rem;
+  padding-left: 18rem;
+}
+
+.mockup {
+  border: 0px solid transparent;
+  padding-top: 2rem;
+  padding-right: 10rem;
+  float:right;
+  width: 85%;
+}
+
+.sitemap {
+  border: 0px solid transparent;
+  padding-top: 2rem;
+  padding-left: 10rem;
+}
