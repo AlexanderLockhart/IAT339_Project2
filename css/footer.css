@@ -9,13 +9,13 @@
 
 }
 
-.row {
+.footer .row {
 	display: flex;
 	flex-wrap: wrap;
 	width: 50%;
 }
 
-.column {
+.footer .column {
 	flex: 25%;
 	padding-left: 20px;
 	margin-bottom: 15px;
