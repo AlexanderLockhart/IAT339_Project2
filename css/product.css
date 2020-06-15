@@ -1,0 +1,13 @@
+.productContainer {
+	border: 1px solid black;
+	display: flex;
+}
+
+.productContainer .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.productContainer .column {
+	flex: 50%;
+}
