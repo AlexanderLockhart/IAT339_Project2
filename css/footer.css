@@ -22,17 +22,17 @@
 }
 
 /* Source: https://stackoverflow.com/questions/30341572/get-links-in-div-on-separate-lines */
-nav a:after {
+.footer nav a:after {
 	content: "";
 	display: block;
 	height: 0;
 	width: 1px;
 }
 
-div p {
+.footer div p {
 	margin: 0;
 }
 
-img {
+.footer img {
 	border: 0;
 }
