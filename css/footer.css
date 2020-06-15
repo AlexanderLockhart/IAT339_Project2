@@ -1,0 +1,38 @@
+.footer {
+	border: 1px solid black;
+	display: flex;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	justify-content: center;
+
+}
+
+.footer .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+.footer .column {
+	flex: 25%;
+	padding-left: 20px;
+	margin-bottom: 15px;
+}
+
+/* Source: https://stackoverflow.com/questions/30341572/get-links-in-div-on-separate-lines */
+.footer nav a:after {
+	content: "";
+	display: block;
+	height: 0;
+	width: 1px;
+}
+
+.footer div p {
+	margin: 0;
+}
+
+.footer img {
+	border: 0;
+}
