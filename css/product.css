@@ -6,8 +6,20 @@
 .productContainer .row {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 }
 
 .productContainer .column {
+	border: 1px solid red;
 	flex: 50%;
+}
+
+
+.productContainer img {
+	height: 500px;
+	width: 500px;
+}
+
+.productContainer input {
+	width: 10%;
 }
