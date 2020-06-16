@@ -18,8 +18,24 @@
 .productContainer img {
 	height: 500px;
 	width: 500px;
+	margin-left: 200px;
 }
 
 .productContainer input {
 	width: 10%;
+}
+
+
+/* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media (max-width: 30em) {
+	.productContainer .column {
+		flex: 100%;
+	}
+	
+	.productContainer img {
+		height: 350px;
+		width: 350px;
+		margin-left: 0;
+	}	
+	
 }
