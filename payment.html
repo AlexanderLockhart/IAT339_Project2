@@ -23,7 +23,7 @@
 	<header>
 		<!-- Navigation       -->
 
-		<a href="products.html">
+		<a href="index.html">
 			<img class="logo" src="assets/logo.png" alt="logo">
 		</a>
 		<nav>
@@ -47,7 +47,7 @@
 
 	<!--Payment Form -->
 	<div class="row">
-	  <div class="col-75">
+	  <div class="col-75 colPad-75">
 	    <div class="container">
 	      <form action="/action_page.php">
 
@@ -94,11 +94,13 @@
 
 			<div class="container">
 				<h3>Shipping Options</h3>
+
 				<label>
-					<input type="radio" name="shipping"> Free Shipping
+					<input type="radio" name="shipping"> Express Shipping (1-2 business days)
 				</label>
+
 				<label>
-					<input type="radio" name="shipping"> Express Shipping
+					<input type="radio" name="shipping"> Free Shipping (5-7 business days)
 				</label>
 			</div>
 
@@ -144,16 +146,16 @@
 
 	  </div>
 
-	  <div class="col-25">
+	  <div class="col-25 colPad-25">
 	    <div class="container">
 	      <h4>Cart <span class="price totalPrice"><i class="fa fa-shopping-basket"></i> 4</span></h4>
 				<p><a href="#">Product</a> <span class="price">$8.99</span></p>
 	      <p>GST <span class="price">$0.45</span></p>
 	      <p>PST <span class="price">$0.63</span></p>
 	      <hr>
-	      <p>Total <span class="price totalPrice"><b>$30</b></span></p>
+	      <p>Total <span class="price subtotalPrice">$10.07</span></p>
 	    </div>
-			<input type="submit" value="Submit" class="paymentButton">
+			<input class="paymentButton" type="submit" value="Submit">
 	  </div>
 	</div>
 
