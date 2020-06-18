@@ -4,17 +4,47 @@
 		<title>Supple Cravings Styleguide</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />		
-		<meta name="description" content="Supple Cravings Styleguide" />
-		<meta name="author" content="Alexander Lockhart">
+		<meta name="description" content="Supple Cravings" />
+		<meta name="author" content="Alexander Lockhart & Jordan Yuen">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/flexbox.css">
 		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/navigation.css">
 		<link rel="stylesheet" href="css/product.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/b8f4adb3f7.js" crossorigin="anonymous"></script>
 	</head>
+
+	<!-- Header -->
+	<header>
+		<!-- Navigation       -->
+
+		<a href="index.html">
+			<img class="logo" src="assets/logo.png" alt="logo">
+		</a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="poducts.html">Products</a></li>
+				<li><a href="ourStory.html">Our Story</a></li>
+			</ul>
+		</nav>
+		<!-- /Navigation -->
+		<div class="search-box">
+			<input class="search-text" type="text" name="" placeholder="Search">
+			<a class="search-button" href="#">
+				<i class="fas fa-search"></i>
+			</a>
+		</div>
+		<a class="shopping-cart" href="shoppingCart.html">
+			<i class="fas fa-shopping-basket fa-lg"></i>
+		</a>
+	</header>
+	<!--/Header -->
+
 
 	<body>
 		<div class="productContainer">
@@ -27,39 +57,167 @@
 					<p> Dosage | Price </p>
 					<p> Product Number 123 </p>
 					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					<p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 					Sed eu dui vitae ligula viverra elementum vel nec velit. 
 					Ut dignissim nibh ex, nec mattis est condimentum molestie. 
 					Maecenas auctor sem sed dignissim semper. Aenean vel odio libero. 
 					Mauris porttitor nisi scelerisque efficitur interdum. Aenean luctus 
 					turpis eu lorem interdum</p>
 
-					<p>Quantity: <input min="0" name="productQuantity" value="1" type="number"> <button class="button">Add to Cart</button> </p> 
-
-					<h2>Ingredients</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
-					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+					<p class="details">Quantity: <input min="0" name="productQuantity" value="1" type="number"> <button class="button">Add to Cart</button> </p> 
 					
-					<h2>Benefits</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
-					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
-					
-					<h2>Return Policy</h2>
+					<div class="detailBorder">
+						<h2>Ingredients</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
+						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+						vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+					</div>
+					<div class="detailBorder">
+						<h2>Benefits</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
+						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+						vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+					</div>
+					<div class="detailBorder">
+						<h2>Return Policy</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
+						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+						vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="userReview">
+			<div class="row">
+				<div class="reviewColumn">
+					<h1>Reviews</h1>
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<form>
+						<textarea id="reviewForm" name="form" rows="4" cols="50">
+						</textarea>
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="otherReviews">
+			<div class="row">
+				<div class="reviewColumnLeft">
+					<h3> Comment 1 Title</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
 					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
 					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 				</div>
+				
+				<div class="reviewColumnRight">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<p>Submitted: 8 days ago </p>
+					<p>By Commentor 1 </p>
+					<p>From Vancouver, BC </p>
+				</div>
 			</div>
 		</div>
-	
-		<div class="productReview">
 		
+		<div class="otherReviews">
+			<div class="row">
+				<div class="reviewColumnLeft">
+					<h3> Comment 2 Title</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+				</div>
+				
+				<div class="reviewColumnRight">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<p>Submitted: 8 days ago </p>
+					<p>By Commentor 2 </p>
+					<p>From Vancouver, BC </p>
+				</div>
+			</div>
 		</div>
+		
+		<div class="otherReviews">
+			<div class="row">
+				<div class="reviewColumnLeft">
+					<h3> Comment 3 Title</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+				</div>
+				
+				<div class="reviewColumnRight">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<p>Submitted: 8 days ago </p>
+					<p>By Commentor 3 </p>
+					<p>From Vancouver, BC </p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="otherReviews">
+			<div class="row">
+				<div class="reviewColumnLeft">
+					<h3> Comment 4 Title</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
+				</div>
+				
+				<div class="reviewColumnRight">
+					<div class="stars">
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+					</div>
+					<p>Submitted: 8 days ago </p>
+					<p>By Commentor 4 </p>
+					<p>From Vancouver, BC </p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
 
 		<footer class="footer">
 			<div class="footer"> 
