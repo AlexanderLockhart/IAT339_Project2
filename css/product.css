@@ -1,0 +1,124 @@
+.productContainer {
+	display: flex;
+	padding: 1em 8em;
+}
+
+.productContainer .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.productContainer .column {
+	flex: 50%;
+}
+
+
+.otherReviews {
+	/* border: 1px solid black; */
+	display: flex;
+	padding: 1em 8em;
+}
+
+.otherReviews .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 42%;
+}
+
+.otherReviews .reviewColumnLeft {
+	/* border: 1px solid red; */
+	flex: 75%;
+}
+
+.otherReviews .reviewColumnRight {
+	flex: 25%;
+	padding-left: 15px;
+	/* border: 1px solid red; */
+}
+
+.userReview .reviewColumn {
+	flex: 100%;
+	padding: 1em 8em;
+}
+
+
+.productContainer img {
+	height: 500px;
+	width: 500px;
+	margin-left: 200px;
+}
+
+.productContainer input {
+	width: 10%;
+}
+
+.productContainer h2 {
+	margin-top: 25px;
+}
+
+.productContainer .details {
+	margin-top: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+.stars {
+	margin-bottom: 15px;
+}
+
+.detailBorder {
+	padding-bottom: 1em;
+	border-bottom: 1px solid lightgrey;
+}
+
+#reviewForm {
+	width: 42%;
+}	
+
+
+
+
+/* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media (max-width: 30em) {
+	.productContainer .column {
+		flex: 100%;
+	}
+	
+	.productContainer img {
+		height: 350px;
+		width: 350px;
+		margin-left: 0px
+	}	
+	
+	.productContainer {
+		padding: 1em 2em;
+	}
+	
+	.otherReviews {
+		padding: 1em 2em;
+	}
+	
+	.userReview .reviewColumn {
+		padding: 1em 2em;
+	}
+	
+	.stars {
+		margin-top: 15px;
+	}
+
+	#reviewForm {
+		width: 100%;
+	}
+	
+	.otherReviews .reviewColumnRight {
+		padding-left: 15px;
+	}
+	
+	.otherReviews .row {
+		width: 100%;
+	}
+}
+
