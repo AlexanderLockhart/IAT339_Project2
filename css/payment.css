@@ -1,0 +1,141 @@
+/* sourced from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding-right: 4em;
+}
+
+.colPad-25 {
+  padding: 1em 8em;
+}
+
+.colPad-75 {
+
+  padding: 1em 8em;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 1em 2em 1em 2em;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-bottom: 3em;
+
+}
+
+.containerCheckout {
+  padding-bottom: 2em;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 3px;
+  margin-bottom: 3em;
+}
+
+.paymentInput {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.paymentButton {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.paymentButton:hover {
+  background-color: #45a049;
+}
+
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: black;
+}
+
+.totalPrice {
+  font-weight:700;
+}
+
+.checkoutImg {
+  border-style: none;
+}
+
+.cartHeading {
+  padding: 1em 3.5em;
+}
+
+/* quantity buttons sourced from https://designmodo.com/shopping-cart-ui/ */
+
+.quantity input {
+  border: none;
+  text-align: center;
+  width: 3em;
+  color: black;
+}
+
+.checkoutButton {
+  width: 30px;
+  height: 30px;
+  background-color:rgb(230, 230, 230);
+  border-radius: 5em;
+  border: none;
+  cursor: pointer;
+}
+
+.minus-btn, .plus-btn {
+  color: black;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other */
+@media (max-width: 800px) {
+  .row {
+    flex-direction:column;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}

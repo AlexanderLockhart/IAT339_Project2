@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Supple Cravings</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Supple Cravings" />
+		<meta name="author" content="Alexander Lockhart & Jordan Yuen">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/flexbox.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/navigation.css">
+		<link rel="stylesheet" href="css/payment.css">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/b8f4adb3f7.js" crossorigin="anonymous"></script>
+
+	</head>
+
+	<!-- Header -->
+	<header>
+		<!-- Navigation       -->
+
+		<a href="index.html">
+			<img class="logo" src="assets/logo.png" alt="logo">
+		</a>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="poducts.html">Products</a></li>
+				<li><a href="ourStory.html">Our Story</a></li>
+			</ul>
+		</nav>
+		<!--/Navigation -->
+		<div class="search-box">
+			<input class="search-text" type="text" name="" placeholder="Search">
+			<a class="search-button" href="#">
+				<i class="fas fa-search"></i>
+			</a>
+		</div>
+		<a class="shopping-cart" href="shoppingCart.html">
+			<i class="fas fa-shopping-basket fa-lg"></i>
+		</a>
+	</header>
+	<!--/Header -->
+
+	<!--Payment Form -->
+	<div class="row">
+	  <div class="col-75 colPad-75">
+	    <div class="container">
+	      <form action="/action_page.php">
+
+					<h3>Shipping Details</h3>
+	        <div class="row">
+	          <div class="col-50">
+							<label for="email">Email</label>
+							<input class="paymentInput" type="text" id="email" name="email">
+
+	            <label for="fname">First Name</label>
+	            <input class="paymentInput" type="text" id="fname" name="firstname">
+
+	            <label for="lname">Last Name</label>
+	            <input class="paymentInput" type="text" id="lname" name="lastname">
+
+	            <label for="pnum">Phone Number</label>
+	            <input class="paymentInput" type="text" id="pnum" name="pnum">
+	          </div>
+
+	          <div class="col-50">
+							<label for="adr">Address</label>
+	            <input class="paymentInput" type="text" id="adr" name="address">
+	            <label for="city">City</label>
+	            <input class="paymentInput" type="text" id="city" name="city">
+	            <label for="province">Province</label>
+	            <input class="paymentInput" type="text" id="province" name="province">
+	            <div class="row">
+	              <div class="col-50">
+	                <label for="country">Country</label>
+	                <input class="paymentInput" type="text" id="country" name="country">
+	              </div>
+	              <div class="col-50">
+	                <label for="postal">Postal Code</label>
+	                <input class="paymentInput" type="text" id="postal" name="postal">
+	              </div>
+	            </div>
+	          </div>
+
+	        </div>
+	      </form>
+	    </div>
+
+			<!-- Shipping Options -->
+
+			<div class="container">
+				<h3>Shipping Options</h3>
+
+				<label>
+					<input type="radio" name="shipping"> Express Shipping (1-2 business days)
+				</label>
+
+				<label>
+					<input type="radio" name="shipping"> Free Shipping (5-7 business days)
+				</label>
+			</div>
+
+			<!-- /Shipping Options -->
+
+
+			<!-- Card Details -->
+
+			<div class="container">
+				<form action="/action_page.php">
+					<h3>Card Details</h3>
+					<div class="row">
+						<div class="col-50">
+							<label for="cardname">Name on Card</label>
+							<input class="paymentInput" type="text" id="cardname" name="cardname" placeholder="Full Name">
+
+						</div>
+
+						<div class="col-50">
+							<label for="cardnum">Card Number</label>
+							<input class="paymentInput" type="text" id="cardnum" name="cardnum" placeholder="1111-2222-3333-4444">
+
+							<div class="row">
+								<div class="col-50">
+									<label for="cvv">CVV</label>
+									<input class="paymentInput" type="text" id="cvv" name="cvv" placeholder="123">
+								</div>
+								<div class="col-50">
+									<label for="expiry">Expiry Date</label>
+									<input class="paymentInput" type="text" id="expiry" name="expiry" placeholder="MM/YYYY">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</form>
+
+
+
+			</div>
+
+			<!-- /Card Details -->
+
+	  </div>
+
+	  <div class="col-25 colPad-25">
+	    <div class="container">
+	      <h4>Cart <span class="price totalPrice"><i class="fa fa-shopping-basket"></i> 4</span></h4>
+				<p><a href="#">Product</a> <span class="price">$8.99</span></p>
+	      <p>GST <span class="price">$0.45</span></p>
+	      <p>PST <span class="price">$0.63</span></p>
+	      <hr>
+	      <p>Total <span class="price subtotalPrice">$10.07</span></p>
+	    </div>
+			<input class="paymentButton" type="submit" value="Submit">
+	  </div>
+	</div>
+
+	<!--/Payment Form -->
+
+
+
+	<body>
+
+		<!--Footer -->
+		<footer class="footer">
+			<div class="footer">
+				<div class="row">
+					<div class="column">
+						<h3>Shop</h3>
+						<nav>
+							<a href="#">Product</a>
+							<a href="#">My Cart</a>
+						</nav>
+					</div>
+
+					<div class="column">
+						<h3>Company</h3>
+						<nav>
+							<a href="#">Our Story</a>
+							<a href="#">Contact Us</a>
+						</nav>
+					</div>
+
+					<div class="column">
+						<h3>Get in touch</h3>
+						<p> 1234 Fake Street </p>
+						<p> Vancouver, BC V5A 1B4 </p>
+						<p> supplecravings@gmail.com </p>
+						<p> (+1)604 123 4567 </p>
+					</div>
+
+					<div class="column">
+						<h3>Socials</h3>
+						<a href="#"><img alt="instagram" src="assets/instagram.png" width="50" height="50"></a>
+						<a href="#"><img alt="twitter" src="assets/twitter.png" width="50" height="50"></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/Footer -->
+
+	</body>
+</html>
