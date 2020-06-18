@@ -1,0 +1,79 @@
+
+ li, a, button {
+   font-family: "Roboto", sans-serif;
+   font-weight: 700;
+   font-size: 1em;
+   color: rgb(61, 125, 209);
+   text-decoration: none;
+ }
+
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 2em;
+ }
+
+ .logo {
+   cursor: pointer;
+   width: 16em;
+   margin-right: 0;
+   border: none
+ }
+
+ .nav_links {
+   list-style: none;
+   padding-right: 25em;
+ }
+
+ .nav_links li {
+   display: inline-block;
+   padding: 0 3em;
+ }
+
+ .nav_links li a {
+   transition: all 0.3s ease 0s;
+ }
+
+ .nav_links li a:hover {
+   color: black;
+ }
+
+ .search-box {
+   border-radius: 40px;
+   border: 1.5px solid rgb(230, 230, 230);
+   padding: 0.3em;
+
+ }
+
+ .search-button {
+   color: rgb(230, 230, 230);
+   float: right;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+ }
+
+ .search-text {
+   font-family: "Roboto", sans-serif;
+   float: left;
+   border: none;
+   background: none;
+   outline: none;
+   padding-left: 1em;
+   width: 15em;
+ }
+
+ .shopping-cart {
+   color: rgb(61, 125, 209);
+   justify-content: center;
+   align-items: center;
+   transition: all 0.3s ease 0s;
+   padding-left: 10em;
+ }
+
+ .shopping-cart:hover {
+   color: black
+ }
