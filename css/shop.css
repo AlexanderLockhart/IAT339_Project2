@@ -1,0 +1,42 @@
+.container {
+	display: flex;
+	padding: 1em 8em;
+	/* margin-bottom: 50px; */
+}
+
+.container .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.container .column {
+	flex: 1;
+}
+
+.container .column2 {
+	flex: 3;
+}
+
+.container img {
+	height: 300px;
+	width: 475px;
+	
+}
+
+.container h1 {
+	font-size: 1rem;
+}
+
+
+/* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media (max-width: 30em) {
+	.container {
+		padding: 1em 2em;
+	}
+	
+	.column2 {
+		margin-bottom: 50px;
+	}
+	
+}

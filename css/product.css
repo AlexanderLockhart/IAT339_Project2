@@ -28,11 +28,11 @@
 
 .otherReviews .reviewColumnLeft {
 	/* border: 1px solid red; */
-	flex: 75%;
+	flex: 3;
 }
 
 .otherReviews .reviewColumnRight {
-	flex: 25%;
+	flex: 1;
 	padding-left: 15px;
 	/* border: 1px solid red; */
 }
