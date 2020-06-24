@@ -78,6 +78,18 @@
 	width: 42%;
 }	
 
+.userReview button {
+  display: inline-block;
+  color: white;
+  border: 0px solid black;
+  border-radius: 25px;
+  background-color: rgb(61, 125, 209);
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.5s ease-out;
+}
+
 
 
 
