@@ -1,0 +1,73 @@
+.container{
+	display: flex;
+	padding: 1em 8em;
+	/* margin-bottom: 50px; */
+}
+
+.container .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.container .column {
+	flex: 5;
+}
+
+.container img {
+	height: 400px;
+	width: 400px;
+}
+
+.container h1 {
+	font-size: 1rem;
+}
+
+.banner {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.banner .row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.banner .bannerColumn {
+	flex: 1;
+	height: 400px;
+	text-align: center;
+	padding-top: 100px;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+.banner img {
+	height: 400px;
+	width: 950px;
+}
+
+
+
+/* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
+@media (max-width: 30em) {
+	.container {
+		padding: 1em 2em;
+	}
+	
+	.column2 {
+		margin-bottom: 50px;
+	}
+	
+	.banner img {
+		height: 250px;
+		width: auto;
+	}
+	
+	.banner .bannerColumn {
+		padding-top: 50px;
+		height: 250px;
+	}
+	
+}
