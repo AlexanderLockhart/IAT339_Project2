@@ -7,73 +7,79 @@
    text-decoration: none;
  }
 
- header {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 2em 8em;
- }
-
- .logo {
-   cursor: pointer;
-   width: 16em;
-   margin-right: 0;
-   border: none
- }
-
- .nav_links {
-   list-style: none;
-   padding-right: 25em;
- }
-
- .nav_links li {
-   display: inline-block;
-   padding: 0 3em;
- }
-
- .nav_links li a {
-   transition: all 0.3s ease 0s;
- }
-
- .nav_links li a:hover {
-   color: black;
- }
-
- .search-box {
-   border-radius: 40px;
-   border: 1.5px solid rgb(230, 230, 230);
-   padding: 0.3em;
+ [class^='grid-col-'] {
+ 	float: left;
+ 	padding: 0;
 
  }
 
- .search-button {
-   color: rgb(230, 230, 230);
-   float: right;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-left: 0.5em;
-   padding-right: 0.5em;
+ .grid-col-1of2, .grid-col-1of4, .grid-col-1of3, .grid-col-2of3 {
+ 	width: 100%;
  }
 
- .search-text {
-   font-family: "Roboto", sans-serif;
-   float: left;
-   border: none;
-   background: none;
-   outline: none;
-   padding-left: 1em;
-   width: 15em;
+ .grid-row::after {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+
  }
 
- .shopping-cart {
-   color: rgb(61, 125, 209);
-   justify-content: center;
-   align-items: center;
-   transition: all 0.3s ease 0s;
-   padding-left: 10em;
+ .grid-col-1of4 > .nav-main-item {
+ 	width: 100%;
  }
 
- .shopping-cart:hover {
-   color: black
+.nav-main-item {
+	display: inline-block;
+	color: rgb(61, 125, 209);
+	font-size: 1rem;
+	padding: 2rem 8rem;
+	text-decoration: none;
+  transition: all 0.3s ease 0s;
+
+}
+
+.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
+	color: black;
+}
+
+.logo {
+  cursor: pointer;
+  border: none
+}
+
+.nav_links {
+  list-style: none;
+  padding: 2rem 8rem;
+
+}
+
+ @media (min-width: 48.75em) {
+
+ 	.grid-col-1of2 {
+ 		width: 50%;
+ 	}
+
+ 	.grid-col-1of2:last-of-type {
+ 		padding-left: 1rem;
+ 	}
+
+ 	.grid-col-1of4 {
+ 		width: 50%;
+ 	}
  }
+
+ @media (min-width: 73em) {
+
+ 	.grid-col-2of3 {
+ 		width: 66.666%;
+ 	}
+
+ 	.grid-col-1of3 {
+ 		width: 33.333%;
+ 		padding-left: 1rem;
+ 	}
+
+ 	.grid-col-1of4 {
+ 		width: 25%;
+ 	}
+}
