@@ -123,7 +123,6 @@
 	}
 }
 
-
 /* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 @media (min-width: 30em) {
 	.container .columnL, .columnR {
