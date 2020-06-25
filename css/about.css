@@ -1,19 +1,21 @@
 .container {
 	display: flex;
-    padding: 1em 8em;	
+  padding: 1em 8em;
 	margin-top: 50px;
 	border-bottom: 1px solid lightgray;
 	padding-bottom: 75px;
+
 }
 
 .container .row {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+
 }
 
 .title1 {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: bold;
 	color: gray;
 }
@@ -34,57 +36,70 @@
 
 .banner {
 	position: relative;
-	text-align: center;
+	text-align: left;
+	overflow: hidden;
 }
 
 .textPosition1 {
 	position: absolute;
-	bottom: 50%; 
-	right: 25%;
+	bottom: 50%;
+	left: 70%;
 }
 
 .textPosition2 {
 	position: absolute;
-	bottom: 40%; 
-	right: 19.75%;
+	bottom: 40%;
+	left: 70%;
 }
 
 
 .banner1{
 	font-size: 2em;
 	font-weight: bold;
-}	
+	color: white;
+}
 
 .banner2{
 	font-size: 1.5em;
 	font-weight: bold;
-}	
+  color: white;
+}
 
 .banner img {
 	width: 100%;
 	height: 400px;
+	border: 0;
+
+}
+
+@media (max-width: 54.8em) {
+  .textPosition1 {
+		position: absolute;
+		bottom: 55%;
+		left: 70%;
+	}
 }
 
 
 /* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
 @media (max-width: 30em) {
-	
+
 	.container {
 		padding: 1em 2em;
 	}
-		
+
 	.textPosition1 {
 		position: absolute;
-		bottom: 50%; 
-		right: 33%;
+		bottom: 65%;
+		left: 70%;
 	}
 
 	.textPosition2 {
 		position: absolute;
-		bottom: 40%; 
-		right: 20%;
+		bottom: 40%;
+		left: 70%;
 	}
-	
+
 	.columnL {
 		padding-left: 0px;
 	}

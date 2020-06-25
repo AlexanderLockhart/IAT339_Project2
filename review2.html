@@ -3,7 +3,7 @@
 	<head>
 		<title>Supple Cravings Styleguide</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Supple Cravings" />
 		<meta name="author" content="Alexander Lockhart & Jordan Yuen">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -23,26 +23,35 @@
 		<!-- Header -->
 		<header>
 			<!-- Navigation       -->
+			<nav class="nav-main grid-row">
 
-			<a href="index.html">
-				<img class="logo" src="assets/logo.png" alt="logo">
-			</a>
-			<nav>
-				<ul class="nav_links">
-					<li><a href="shop.html">Products</a></li>
-					<li><a href="about.html">Our Story</a></li>
+	      <div class="grid-col-1of4">
+	        <a href="index.html" class="nav-main-item">
+						<img class="logo" src="assets/logo.svg" alt="logo">
+					</a>
+	      </div>
+
+	      <div class="grid-col-1of4">
+					<ul class="nav_links">
+						<a href="shop.html">Products</a>
+					</ul>
+	      </div>
+
+	      <div class="grid-col-1of4">
+					<ul class="nav_links">
+						<li><a href="about.html">Our Story</a></li>
+					</ul>
+	      </div>
+
+	      <div class="grid-col-1of4">
+					<ul class="nav_links">
+						<li><a href="shoppingCart.html">
+						<i class="fas fa-shopping-basket fa-lg"></i>
+					</a></li>
 				</ul>
-			</nav>
-			<!-- /Navigation -->
-			<div class="search-box">
-				<input class="search-text" type="text" placeholder="Search">
-				<a class="search-button" href="#">
-					<i class="fas fa-search"></i>
-				</a>
-			</div>
-			<a class="shopping-cart" href="shoppingCart.html">
-				<i class="fas fa-shopping-basket fa-lg"></i>
-			</a>
+	      </div>
+	    </nav>
+
 		</header>
 		<!--/Header -->
 
@@ -50,47 +59,47 @@
 		<div class="productContainer">
 			<div class="row">
 				<div class="column">
-					<img alt="productImage" src="assets/green_pill.jpg">
+					<img alt="productImage" src="assets/vitaminB6.jpg">
 				</div>
 				<div class="column">
 					<h1>Product name</h1>
 					<p> Dosage | Price </p>
 					<p> Product Number 123 </p>
-					
-					<p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. 
-					Ut dignissim nibh ex, nec mattis est condimentum molestie. 
-					Maecenas auctor sem sed dignissim semper. Aenean vel odio libero. 
-					Mauris porttitor nisi scelerisque efficitur interdum. Aenean luctus 
+
+					<p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed eu dui vitae ligula viverra elementum vel nec velit.
+					Ut dignissim nibh ex, nec mattis est condimentum molestie.
+					Maecenas auctor sem sed dignissim semper. Aenean vel odio libero.
+					Mauris porttitor nisi scelerisque efficitur interdum. Aenean luctus
 					turpis eu lorem interdum</p>
 
-					<p class="details">Quantity: <input min="0" name="productQuantity" value="1" type="number"> <button class="button">Add to Cart</button> </p> 
-					
+					<p class="details">Quantity: <input min="0" name="productQuantity" value="1" type="number"> <button class="button">Add to Cart</button> </p>
+
 					<div class="detailBorder">
 						<h2>Ingredients</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 						vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 					</div>
 					<div class="detailBorder">
 						<h2>Benefits</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 						vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 					</div>
 					<div class="detailBorder">
 						<h2>Return Policy</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+						scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 						vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="userReview">
 			<div class="row">
 				<div class="reviewColumn">
@@ -111,17 +120,17 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="otherReviews">
 			<div class="row">
 				<div class="reviewColumnLeft">
 					<h3> New Comment Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 				</div>
-				
+
 				<div class="reviewColumnRight">
 					<div class="stars">
 						<span class="fa fa-star checked"></span>
@@ -136,18 +145,18 @@
 				</div>
 			</div>
 		</div>
-		
-		
+
+
 		<div class="otherReviews">
 			<div class="row">
 				<div class="reviewColumnLeft">
 					<h3> Comment 1 Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 				</div>
-				
+
 				<div class="reviewColumnRight">
 					<div class="stars">
 						<span class="fa fa-star checked"></span>
@@ -162,17 +171,17 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="otherReviews">
 			<div class="row">
 				<div class="reviewColumnLeft">
 					<h3> Comment 2 Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 				</div>
-				
+
 				<div class="reviewColumnRight">
 					<div class="stars">
 						<span class="fa fa-star checked"></span>
@@ -187,17 +196,17 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="otherReviews">
 			<div class="row">
 				<div class="reviewColumnLeft">
 					<h3> Comment 3 Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 				</div>
-				
+
 				<div class="reviewColumnRight">
 					<div class="stars">
 						<span class="fa fa-star checked"></span>
@@ -212,18 +221,18 @@
 				</div>
 			</div>
 		</div>
-		
-		
+
+
 		<div class="otherReviews">
 			<div class="row">
 				<div class="reviewColumnLeft">
 					<h3> Comment 4 Title</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur 
-					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at 
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Sed eu dui vitae ligula viverra elementum vel nec velit. Curabitur
+					scelerisque ut orci vitae pellentesque. Mauris mollis nulla at
 					vestibulum imperdiet. Integer quis magna eget quam mattis convallis </p>
 				</div>
-				
+
 				<div class="reviewColumnRight">
 					<div class="stars">
 						<span class="fa fa-star checked"></span>
@@ -241,24 +250,24 @@
 
 
 		<footer class="footer">
-			<div class="footer"> 
+			<div class="footer">
 				<div class="row">
 					<div class="column">
 						<h3>Shop</h3>
 						<nav>
 							<a href="shop.html">Products</a>
-							<a href="shoppingCart.html">My Cart</a>						
+							<a href="shoppingCart.html">My Cart</a>
 						</nav>
 					</div>
-					
+
 					<div class="column">
 						<h3>Company</h3>
 						<nav>
 							<a href="about.html">Our Story</a>
-							<a href="#">Contact Us</a> 					
+							<a href="#">Contact Us</a>
 						</nav>
 					</div>
-					
+
 					<div class="column">
 						<h3>Get in touch</h3>
 						<p> 1234 Fake Street </p>
@@ -266,11 +275,11 @@
 						<p> supplecravings@gmail.com </p>
 						<p> (+1)604 123 4567 </p>
 					</div>
-					
+
 					<div class="column">
 						<h3>Socials</h3>
-						<a href="#"><img alt="instagram" src="assets/instagram.png" width="50" height="50"></a> 
-						<a href="#"><img alt="twitter" src="assets/twitter.png" width="50" height="50"></a> 					
+						<a href="#"><img alt="instagram" src="assets/instagram.png" width="50" height="50"></a>
+						<a href="#"><img alt="twitter" src="assets/twitter.png" width="50" height="50"></a>
 					</div>
 				</div>
 			</div>

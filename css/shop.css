@@ -17,10 +17,12 @@
 .container img {
 	height: 400px;
 	width: 400px;
+	border: 0;
 }
 
 .container h1 {
 	font-size: 1rem;
+
 }
 
 .banner {
@@ -48,6 +50,9 @@
 	width: 950px;
 }
 
+h3{
+	font-size: 1.5em;
+}
 
 
 /* Source: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp */
@@ -55,19 +60,24 @@
 	.container {
 		padding: 1em 2em;
 	}
-	
+
 	.column2 {
 		margin-bottom: 50px;
 	}
-	
+
+	.headerMargin {
+		margin-bottom: 0;
+	}
+
+
 	.banner img {
 		height: 250px;
 		width: auto;
 	}
-	
+
 	.banner .bannerColumn {
 		padding-top: 50px;
 		height: 250px;
 	}
-	
+
 }

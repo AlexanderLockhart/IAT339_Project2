@@ -12,6 +12,8 @@
 		<link rel="stylesheet" href="css/flexbox.css">
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/navigation.css">
+		<link rel="stylesheet" href="css/shop.css">
+		<link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" href="css/hero.css">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -24,40 +26,122 @@
 		<!-- Header -->
 		<header>
 			<!-- Navigation       -->
+			<nav class="nav-main grid-row">
 
-			<a href="index.html">
-				<img class="logo" src="assets/logo.png" alt="logo">
-			</a>
-			<nav>
-				<ul class="nav_links">
-					<li><a href="shop.html">Products</a></li>
-					<li><a href="about.html">Our Story</a></li>
+	      <div class="grid-col-1of4">
+	        <a href="index.html" class="nav-main-item">
+						<img class="logo" src="assets/logo.svg" alt="logo">
+					</a>
+	      </div>
+
+	      <div class="grid-col-1of4">
+					<ul class="nav_links">
+						<a href="shop.html">Products</a>
+					</ul>
+	      </div>
+
+	      <div class="grid-col-1of4">
+					<ul class="nav_links">
+						<li><a href="about.html">Our Story</a></li>
+					</ul>
+	      </div>
+
+	      <div class="grid-col-1of4">
+					<ul class="nav_links">
+						<li><a href="shoppingCart.html">
+						<i class="fas fa-shopping-basket fa-lg"></i>
+					</a></li>
 				</ul>
-			</nav>
-			<!--/Navigation -->
-			<div class="search-box">
-				<input class="search-text" type="text" name="search" placeholder="Search">
-				<a class="search-button" href="#">
-					<i class="fas fa-search"></i>
-				</a>
-			</div>
-			<a class="shopping-cart" href="shoppingCart.html">
-				<i class="fas fa-shopping-basket fa-lg"></i>
-			</a>
+	      </div>
+	    </nav>
+
 		</header>
 		<!--/Header -->
 
 		<!--Hero Image -->
-		<a href="product.html"><div class="hero-image">
-			<div class="hero-text">
-				<h3>Featured Product</h3>
-				<h1>Vitamin B12 with Methulcobalamin</h1>
-				<h3>$8.99</h3>
-			</div>
-		</div></a>
+		<a href="product1.html">
+		<div class="banner">
+			<img src="assets/vitaminB12.jpg" alt="heroImage">
+			<div class="textPosition1"><p class="banner2">Featured Product</p></div>
+			<div class="textPosition2"><p class="banner1">Vitamin B12 with Methulcobalamin</p></div>
+			<div class="textPosition3"><p class="banner2">$8.99</p></div>
+		</div>
+	</a>
 		<!--/Hero Image -->
 
-		<a href="product.html" class="nav-main-item">Product Page</a>
+		<!-- Featured Products -->
+		<div class="container">
+			<div class="column2 headerMargin">
+				<h3>Discover Our Featured Products</h3>
+			</div>
+		</div>
+
+		<div class="container headerMargin">
+			<div class="row">
+				<a href="product1.html">
+					<div class="column2">
+						<img alt="productImage" src="assets/vitaminB12.jpg">
+						<h1> Vitamin B12 with Methylcobalamin </h1>
+						<p> $8.99 </p>
+					</div>
+				</a>
+				<div class="column">
+
+				</div>
+				<a href="product2.html">
+					<div class="column2">
+						<img alt="productImage" src="assets/vitaminB6.jpg">
+						<h1> Vitamin B6 </h1>
+						<p> $7.99 </p>
+					</div>
+				</a>
+				<div class="column">
+
+				</div>
+				<a href="product1.html">
+					<div class="column2">
+						<img alt="productImage" src="assets/vitaminD3.jpg">
+						<h1> Vitamin D3 </h1>
+						<p> $5.99 </p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- /Featured Products -->
+
+		<!-- Shop Promotion -->
+		<div class="container">
+
+
+		</div>
+		<!-- /Shop Promotion -->
+		<a href="shop.html">
+		<div class="shopBanner">
+			<img src="assets/shopImage.jpg" alt="shopImage">
+			<div class="textPosition4"><p class="banner1">Shop Now</p></div>
+		</div>
+	</a>
+		<!-- Mission Statement -->
+
+		<div class="container">
+			<div class="row">
+				<div class="columnL">
+					<p class="title2">Free of Vague Promises</p>
+					<p class="title2">and Unnecessary Confusion.</p>
+				</div>
+
+				<div class="columnR">
+					<p>At Supple Cravings we strive to provide customers with reliable supplements
+						that have genuine product ingredients lists so you know what you are putting
+						into your body. Supple Cravings focuses on providing you with ingredients
+						that work, free of vague promises and unnecessary confusion. </p>
+				</div>
+			</div>
+		</div>
+		<!-- /Mission Statement -->
+
+		<div class="container">
+		</div>
 
 		<!--Footer -->
 		<footer class="footer">
@@ -96,6 +180,7 @@
 			</div>
 		</footer>
 		<!--/Footer -->
+
 
 	</body>
 </html>
