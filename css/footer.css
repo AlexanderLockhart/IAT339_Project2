@@ -7,7 +7,7 @@ footer {
 	width: 100%;
 	justify-content: center;
 	margin-top: auto;
-	background-color: #c7c7c7;
+	background-color: #e5e5e5;
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
@@ -46,8 +46,8 @@ footer {
 		padding-top: 0em;
 		padding-bottom: 1em;
 	}
-	
-	
+
+
 	.footer .column {
 		flex: 50%;
 		padding-left: 25px;
