@@ -47,6 +47,7 @@
 	height: 500px;
 	width: 500px;
 	margin-left: 200px;
+	border: 0;
 }
 
 .productContainer input {
@@ -76,7 +77,7 @@
 
 #reviewForm {
 	width: 42%;
-}	
+}
 
 .userReview button {
   display: inline-block;
@@ -98,25 +99,25 @@
 	.productContainer .column {
 		flex: 100%;
 	}
-	
+
 	.productContainer img {
 		height: 350px;
 		width: 350px;
 		margin-left: 0px
-	}	
-	
+	}
+
 	.productContainer {
 		padding: 1em 2em;
 	}
-	
+
 	.otherReviews {
 		padding: 1em 2em;
 	}
-	
+
 	.userReview .reviewColumn {
 		padding: 1em 2em;
 	}
-	
+
 	.stars {
 		margin-top: 15px;
 	}
@@ -124,13 +125,12 @@
 	#reviewForm {
 		width: 100%;
 	}
-	
+
 	.otherReviews .reviewColumnRight {
 		padding-left: 15px;
 	}
-	
+
 	.otherReviews .row {
 		width: 100%;
 	}
 }
-

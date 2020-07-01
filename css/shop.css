@@ -48,6 +48,7 @@
 .banner img {
 	height: 400px;
 	width: 950px;
+	border: 0;
 }
 
 h3{
