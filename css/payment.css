@@ -110,7 +110,7 @@ span.price {
 /* quantity buttons sourced from https://designmodo.com/shopping-cart-ui/ */
 
 .quantity input {
-  border: none;
+
   text-align: center;
   width: 3em;
   color: black;
