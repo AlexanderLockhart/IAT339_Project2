@@ -104,7 +104,7 @@ span.price {
 }
 
 .cartHeading {
-  padding: 1em 3.5em;
+  padding: 1em 4em;
 }
 
 /* quantity buttons sourced from https://designmodo.com/shopping-cart-ui/ */
@@ -130,12 +130,16 @@ span.price {
 }
 
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other */
-@media (max-width: 800px) {
-  .row {
-    flex-direction:column;
-  }
+@media (max-width: 30em) {
+
   .col-25 {
     margin-bottom: 20px;
+  }
+
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding-right: 0;
+    padding: 0;
   }
 }

@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/hero.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
@@ -19,7 +24,8 @@
     <h1>Supple Cravings Styleguide</h1>
 
     <nav class="nav-main">
-      <a href="index.html" class="nav-main-item">Styleguide</a>
+      <a href="index.html" class="nav-main-item">Index</a>
+      <a href="styleguide.html" class="nav-main-item">Styleguide</a>
       <a href="wireframes.html" class="nav-main-item">Wireframes</a>
       <a href="citations.html" class="nav-main-item">Citations</a>
 	  <a href="https://github.com/AlexanderLockhart/IAT339_Project2" class="nav-main-item">Github</a>
@@ -31,6 +37,12 @@
       <a href="#">an in-text link</a>
       <h3>Code:</h3>
       <code>&lt;a href="#"&gt;an in-text link&lt;/a&gt;</code>
+      <code>a {
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+        color:rgb(61, 125, 209);
+        transition: color 0.5s;
+      }</code>
     </section>
 
     <section>
@@ -39,6 +51,16 @@
       <button class="button">Add to Cart</button>
       <h3>Code</h3>
       <code>&lt;button class="button"&gt;Add to Cart&lt;/button&gt;</code>
+      <code>button {
+         display: inline-block;
+         color: white;
+         border: 0px solid black;
+         border-radius: 25px;
+         background-color: rgb(61, 125, 209);
+         font-size: 1rem;
+         padding: 0.4rem 0.8rem;
+         text-decoration: none;
+       }</code>
     </section>
 
     <section>
@@ -50,9 +72,40 @@
       <code>
         &lt;input type="submit" name="submit" value="Submit"&gt;
       </code>
+
+      <code>
+        input[type=submit] {
+          display: inline-block;
+          color: white;
+          border: 0px solid black;
+          border-radius: 25px;
+          background-color: rgb(61, 125, 209);
+          font-size: 1rem;
+          padding: 0.4rem 0.8rem;
+          text-decoration: none;
+          transition: background-color 0.5s ease-out;
+        }
+      </code>
+
+
       <code>
         &lt;input type="reset" name="reset" value="Reset"&gt;
       </code>
+
+      <code>
+        input[type=reset] {
+          display: inline-block;
+          color: rgb(61, 125, 209);
+          border: 2px solid rgb(61, 125, 209);
+          border-radius: 25px;
+          background-color: transparent;
+          font-size: 1rem;
+          padding: 0.4rem 0.8rem;
+          text-decoration: none;
+          transition: background-color 0.5s ease-out;
+        }
+      </code>
+
 
     </section>
 
@@ -77,8 +130,20 @@
       <h3>Heading 3</h3>
       <h3>Code</h3>
       <code>&lt;h1&gt; Heading 1 &lt;/h1&gt;</code>
+      <code>h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.75rem;
+      }</code>
       <code>&lt;h2&gt; Heading 2 &lt;/h2&gt;</code>
+      <code>h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+      }</code>
       <code>&lt;h3&gt; Heading 3 &lt;/h3&gt;</code>
+      <code>h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+      }</code>
     </section>
 
     <section>
@@ -87,6 +152,10 @@
       <p>This is an example of a paragraph for Supple Cravings.</p>
       <h3>Code</h3>
       <code>&lt;p&gt; This is an example of a paragraph for Supple Cravings. &lt;/p&gt;</code>
+      <code>p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.8em;
+      }</code>
     </section>
 
     <section>
@@ -115,6 +184,13 @@
         Point 3
         &lt;/li&gt;
         &lt;/ul&gt;</code>
+
+        <code> li {
+           font-family: "Roboto", sans-serif;
+           font-size: 1em;
+           color: rgb(61, 125, 209);
+           text-decoration: none;
+         }</code>
     </section>
 
     <section>
@@ -143,6 +219,13 @@
         Point 3
         &lt;/li&gt;
         &lt;/ol&gt;</code>
+
+        <code> li {
+           font-family: "Roboto", sans-serif;
+           font-size: 1em;
+           color: rgb(61, 125, 209);
+           text-decoration: none;
+         }</code>
     </section>
 
     <section>
@@ -151,27 +234,35 @@
       <nav class="nav-main">
         <a href="wireframes.html" class="nav-main-item">Wireframes</a>
         <a href="citations.html" class="nav-main-item">Citations</a>
-        <input type="text" placeholder="Search" name="search">
 
       </nav>
       <h3>Code</h3>
       <code>
-        .nav-main-item{
-        display: inline-block;
-        color: rgb(61, 125, 209);
-        font-weight: bold;
-      }
+        &lt;div class="grid-col-1of4"&gt;
+          &lt;ul class="nav_links"&gt;
+            &lt;li&gt;&lt;a href="about.html">Our Story&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        ...
+      </code>
+
+      <code>
+        .nav-main-item {
+        	display: inline-block;
+        	color: rgb(61, 125, 209);
+        	font-size: 1rem;
+        	padding: 2rem 8rem;
+        	text-decoration: none;
+          transition: all 0.3s ease 0s;
+          font-weight: 700;
+        }
       </code>
 
       <code>
         .nav-main-item:hover, .nav-main-item:active, .nav-main-item:focus {
-        color:rgb(59, 58, 48);
-      }
-    </code>
-      <code>
-        &lt;input type="text" placeholder="Search" name="search"&gt;
-    </code>
-
+          	color: black;
+        }
+      </code>
 
     </section>
 
